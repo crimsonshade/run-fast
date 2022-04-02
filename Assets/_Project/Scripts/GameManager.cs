@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Slider   countdownBar;
     [SerializeField] private float    countdownTime;
     [SerializeField] private TMP_Text countdownText;
+    [SerializeField] private bool     timerPaused;
 
     [Header("Screens")] 
     [SerializeField] private GameObject deadScreen;
@@ -26,22 +27,32 @@ public class GameManager : MonoBehaviour
         countdownBar.maxValue = _time;
         countdownBar.value = _time;
         countdownText.text = _time.ToString("0.0");
+
+        timerPaused = false;
         
         deadScreen.SetActive(false);
     }
 
     private void Update()
     {
-        if (_time >= 0)
+        if (timerPaused)
         {
-            _time -= Time.deltaTime;
-            countdownBar.value = _time;
-            countdownText.text = _time.ToString("0.0");
-        }
-        else
-        {
-            _player.KillPlayer();
-            deadScreen.SetActive(true);
+            if (_time > countdownTime)
+            {
+                _time = countdownTime;
+            }
+            
+            if (_time >= 0)
+            {
+                _time -= Time.deltaTime;
+                countdownBar.value = _time;
+                countdownText.text = _time.ToString("0.0");
+            }
+            else
+            {
+                _player.KillPlayer();
+                deadScreen.SetActive(true);
+            }
         }
     }
 
