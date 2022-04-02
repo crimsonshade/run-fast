@@ -187,12 +187,6 @@
         "com.unity.modules.imgui": "1.0.0"
       }
     },
-    "xyz.crmsn.tools": {
-      "version": "file:D:/1__Workspace/000__Coding/1_Sonstiges/2_Packages/Tools",
-      "depth": 0,
-      "source": "local",
-      "dependencies": {}
-    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,
