@@ -5,11 +5,21 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private Slider countdownBar;
-    [SerializeField] private float countdownTime;
+    [Header("Countdown")]
+    [SerializeField] private Slider   countdownBar;
+    [SerializeField] private float    countdownTime;
     [SerializeField] private TMP_Text countdownText;
 
+    [Header("Screens")] 
+    [SerializeField] private GameObject deadScreen;
+
     private float _time;
+    private PlayerMovement _player;
+
+    private void Awake()
+    {
+        _player = FindObjectOfType<PlayerMovement>();
+    }
 
     private void Start()
     {
@@ -17,6 +27,8 @@ public class GameManager : MonoBehaviour
         countdownBar.maxValue = _time;
         countdownBar.value = _time;
         countdownText.text = _time.ToString("0.0");
+        
+        deadScreen.SetActive(false);
     }
 
     private void Update()
@@ -29,7 +41,8 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("kill player");
+            _player.KillPlayer();
+            deadScreen.SetActive(true);
         }
     }
 }

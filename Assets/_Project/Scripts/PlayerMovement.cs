@@ -30,6 +30,8 @@ public class PlayerMovement : MonoBehaviour
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 
+    #region MOVEMENT
+
     public void Move(InputAction.CallbackContext context)
     {
         _horizontal = context.ReadValue<Vector2>().x;
@@ -46,5 +48,14 @@ public class PlayerMovement : MonoBehaviour
         {
             _rb.velocity = new Vector2(_rb.velocity.x, _rb.velocity.y * 0.5f);
         }
+    }
+
+    #endregion
+
+    public void KillPlayer()
+    {
+        _rb.velocity = Vector2.zero;
+        _rb.gravityScale = 0f;
+        _horizontal = 0f;
     }
 }
