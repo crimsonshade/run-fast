@@ -45,4 +45,9 @@ public class GameManager : MonoBehaviour
             deadScreen.SetActive(true);
         }
     }
+
+    public void AddTime(float time)
+    {
+        _time += time;
+    }
 }
