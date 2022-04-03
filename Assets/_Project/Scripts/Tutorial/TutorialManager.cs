@@ -1,5 +1,3 @@
-using System;
-using System.Security.Cryptography;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -31,7 +29,7 @@ public class TutorialManager : MonoBehaviour
 
     public void Accept(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && index < texts.Length)
         {
             index++;
             tutText.text = texts[index].GetText();

@@ -28,31 +28,34 @@ public class GameManager : MonoBehaviour
         countdownBar.value = _time;
         countdownText.text = _time.ToString("0.0");
 
-        timerPaused = false;
-        
         deadScreen.SetActive(false);
     }
 
     private void Update()
     {
-        if (timerPaused)
+        if (!timerPaused)
         {
-            if (_time > countdownTime)
-            {
-                _time = countdownTime;
-            }
-            
-            if (_time >= 0)
-            {
-                _time -= Time.deltaTime;
-                countdownBar.value = _time;
-                countdownText.text = _time.ToString("0.0");
-            }
-            else
-            {
-                _player.KillPlayer();
-                deadScreen.SetActive(true);
-            }
+            Countdown();
+        }
+    }
+
+    private void Countdown()
+    {
+        if (_time > countdownTime)
+        {
+            _time = countdownTime;
+        }
+
+        if (_time >= 0)
+        {
+            _time -= Time.deltaTime;
+            countdownBar.value = _time;
+            countdownText.text = _time.ToString("0.0");
+        }
+        else
+        {
+            _player.KillPlayer();
+            deadScreen.SetActive(true);
         }
     }
 

@@ -14,4 +14,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Project/Scenes/Tutorial.unity
     guid: 586dadc3c5da094448defe7142706b98
+  - enabled: 1
+    path: Assets/_Project/Scenes/Level 01.unity
+    guid: d0baa7adbf2f0ee43aa929fa01281727
+  - enabled: 1
+    path: Assets/_Project/Scenes/Level 02.unity
+    guid: 0ac2cdff4e44fcd4fb81c1a04eb1ec6c
+  - enabled: 1
+    path: Assets/_Project/Scenes/Level 03.unity
+    guid: 4ce2797b34580fb449a8257606b49cb4
+  - enabled: 1
+    path: Assets/_Project/Scenes/Level 04.unity
+    guid: 67721f8ef47573a4996a91a2fae00ee1
+  - enabled: 1
+    path: Assets/_Project/Scenes/Level 05.unity
+    guid: 1c3a1e9ad5afb294d807bc065c9da487
+  - enabled: 1
+    path: Assets/_Project/Scenes/Level 06.unity
+    guid: 300124bbf4d38424dbf6f3acb609821c
   m_configObjects: {}

@@ -1,5 +1,3 @@
-using System;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -16,7 +14,7 @@ public class MainMenuManager : MonoBehaviour
 
     public void StartGamer()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("Tutorial");
     }
 
     public void InfoScreen()
@@ -28,5 +26,10 @@ public class MainMenuManager : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void Soiclas()
+    {
+        Application.OpenURL("https://linktr.ee/crimsonshade_");
     }
 }

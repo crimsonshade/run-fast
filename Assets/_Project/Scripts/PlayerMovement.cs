@@ -11,10 +11,12 @@ public class PlayerMovement : MonoBehaviour
     private float _horizontal;
     
     private Rigidbody2D _rb;
+    private AudioSource _audio;
 
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
+        _audio = GetComponent<AudioSource>();
     }
 
     private void FixedUpdate()
@@ -39,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
         if (context.performed && IsGrounded())
         {
             _rb.velocity = new Vector2(_rb.velocity.x, jumpPower);
+            _audio.Play();
         }
 
         if (context.canceled && _rb.velocity.y > 0f)

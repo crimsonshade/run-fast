@@ -1488,6 +1488,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1689398297}
     - target: {fileID: 8471183897958271664, guid: 85429410f7f2b234eb32a60783556cf9, type: 3}
+      propertyPath: timerPaused
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8471183897958271664, guid: 85429410f7f2b234eb32a60783556cf9, type: 3}
       propertyPath: countdownBar
       value: 
       objectReference: {fileID: 718754593}

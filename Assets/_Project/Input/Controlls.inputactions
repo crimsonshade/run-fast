@@ -211,45 +211,6 @@
                     "isPartOfComposite": false
                 }
             ]
-        },
-        {
-            "name": "Tutorial",
-            "id": "775127d7-ec8c-4f0e-b7a6-f72fa939606c",
-            "actions": [
-                {
-                    "name": "Accept",
-                    "type": "Button",
-                    "id": "0cea6d51-1fb0-4ed4-88bb-962df57e2491",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "",
-                    "id": "e2b39878-74a5-4c59-a97a-a6e3602b3249",
-                    "path": "<Keyboard>/tab",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "Accept",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "a8fd178d-70a2-4e91-8edc-4831e8ac874a",
-                    "path": "<Gamepad>/buttonEast",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Gamepad",
-                    "action": "Accept",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                }
-            ]
         }
     ],
     "controlSchemes": [
