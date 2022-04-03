@@ -674,34 +674,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3731946337822210109, guid: 20f3710a3b7c4b34c83478e569c7358d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3731946337822210109, guid: 20f3710a3b7c4b34c83478e569c7358d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3731946337822210109, guid: 20f3710a3b7c4b34c83478e569c7358d, type: 3}
+    - target: {fileID: 3731946336771622173, guid: 20f3710a3b7c4b34c83478e569c7358d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1991958321}
     - target: {fileID: 3731946337822210109, guid: 20f3710a3b7c4b34c83478e569c7358d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3731946337822210109, guid: 20f3710a3b7c4b34c83478e569c7358d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: RestartLevel
-      objectReference: {fileID: 0}
-    - target: {fileID: 3731946337822210109, guid: 20f3710a3b7c4b34c83478e569c7358d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: LevelManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3731946337822210109, guid: 20f3710a3b7c4b34c83478e569c7358d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1991958321}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20f3710a3b7c4b34c83478e569c7358d, type: 3}
 --- !u!1 &804991002 stripped

@@ -32,4 +32,10 @@ public class MainMenuManager : MonoBehaviour
     {
         Application.OpenURL("https://linktr.ee/crimsonshade_");
     }
+
+    public void BackTo()
+    {
+        mainScreen.SetActive(true);
+        infoScreen.SetActive(false);
+    }
 }
